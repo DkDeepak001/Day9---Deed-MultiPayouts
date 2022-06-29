@@ -12,7 +12,7 @@ contract MultiPayouts{
 	uint constant public INTERVAL = 10;
 	uint public paidPayouts;
 
-	constructor (address _sender, address payable _reciver, uint _time) payable{
+	constructor (address _sender, address payable _reciver, uint _time) payable public{
 
 		sender = _sender;
 		reciver = _reciver;
